@@ -75,7 +75,7 @@
 	       <sonar.login>sqa_8808c343e2ad8f08db0e45b5cb7f178d6f6f740b</sonar.login>
                <sonar.projectName>nari333</sonar.projectName>
                <sonar.projectVersion>main</sonar.projectVersion>
-               <sonar.test.exclusions>**/test/sonar.java.binaries/**/*.*</sonar.test.exclusions>
+               <sonar.exclusions>src/main/java/**/*.java</sonar.exclusions>
                <sonar.exclusions>**/ai/**/*.*,**/jdbc/**/*.*,**/mpt/**/*.*,**/jcr/**/*.*,**/JDBC*</sonar.exclusions>
             </properties>
         </profile>
