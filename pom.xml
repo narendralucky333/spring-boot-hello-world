@@ -17,7 +17,6 @@
 
     <properties>
         <java.version>11</java.version>
-	<sonar.java.binaries>target/classes</sonar.java.binaries>
     </properties>
 
     <dependencies>
@@ -47,7 +46,7 @@
 	    <plugin>
                 <groupId>org.sonarsource.scanner.maven</groupId>
                 <artifactId>sonar-maven-plugin</artifactId>
-                <version>3.9.1.2184</version>
+                <version>3.9.0.2155</version>
             </plugin>
             <plugin>
                 <artifactId>maven-deploy-plugin</artifactId>
