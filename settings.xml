@@ -14,13 +14,13 @@
   </servers>
   
   
-  <mirrors>
-    <mirror>
-       <id>lucky-proxy</id>
-       <mirrorOf>*</mirrorOf>
-       <url>http://nexus-java-cicd.apps.cluster-s7cmb.s7cmb.sandbox2460.opentlc.com/repository/lucky-proxy/</url>
-    </mirror>
-  </mirrors>
+# <mirrors>
+#   <mirror>
+#      <id>lucky-proxy</id>
+#      <mirrorOf>*</mirrorOf>
+#      <url>http://nexus-java-cicd.apps.cluster-s7cmb.s7cmb.sandbox2460.opentlc.com/repository/lucky-proxy/</url>
+#   </mirror>
+# </mirrors>
   <profiles>
     <profile>
       <id>env-dev</id>
