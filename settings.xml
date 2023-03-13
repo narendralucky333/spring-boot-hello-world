@@ -7,7 +7,7 @@
   <proxies></proxies>
   <servers>
     <server>
-      <id>lucky-snapshot</id>
+      <id>narendra-snapshot</id>
       <username>narendra</username>
       <password>narendra</password>
     </server>
