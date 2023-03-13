@@ -89,13 +89,6 @@
             </activation>
             <build>
                 <plugins>
-                     <profile>
-            <id>coverage</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
-            <build>
-                <plugins>
                     <plugin>
                         <groupId>org.jacoco</groupId>
                         <artifactId>jacoco-maven-plugin</artifactId>
@@ -108,15 +101,13 @@
                             </execution>
                             <execution>
                                 <id>report</id>
+				<phase>test</phase>
                                 <goals>
                                     <goal>report</goal>
                                 </goals>
                             </execution>
                         </executions>
                     </plugin>
-                </plugins>
-            </build>
-        </profile>
                 </plugins>
             </build>
         </profile>
