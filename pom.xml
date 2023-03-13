@@ -59,7 +59,6 @@
 	    <plugin>
                 <groupId>org.sonarsource.scanner.maven</groupId>
                 <artifactId>sonar-maven-plugin</artifactId>
-		<version>3.9.0.2155</version>
             </plugin>
         </plugins>
     </build>
@@ -75,7 +74,7 @@
 	       <sonar.login>sqa_65a3cbac0adf0bcdb19aae499e667d90e5084d5e</sonar.login>
                <sonar.projectName>nari333</sonar.projectName>
                <sonar.projectVersion>main</sonar.projectVersion>
-               <sonar.exclusions>src/main/java/**/*.java</sonar.exclusions>
+               <sonar.test.exclusions>**/test/**/*.*</sonar.test.exclusions>
                <sonar.exclusions>**/ai/**/*.*,**/jdbc/**/*.*,**/mpt/**/*.*,**/jcr/**/*.*,**/JDBC*</sonar.exclusions>
             </properties>
         </profile>
