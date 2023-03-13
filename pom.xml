@@ -96,7 +96,7 @@
                <sonar.projectName>nari333</sonar.projectName>
                <sonar.projectVersion>main</sonar.projectVersion>
                <sonar.test.exclusions>**/test/**/*.*</sonar.test.exclusions>
-               <sonar.exclusions>**/ai/**/*.*,**/jdbc/**/*.*,**/mpt/**/*.*,**/jcr/**/*.*,**/JDBC*,**/classes/**/*.*</sonar.exclusions>
+               <sonar.exclusions>**/ai/**/*.*,**/jdbc/**/*.*,**/mpt/**/*.*,**/jcr/**/*.*,**/JDBC*,**target/classes/**/*.*</sonar.exclusions>
             </properties>
         </profile>
         <profile>
