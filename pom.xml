@@ -95,6 +95,7 @@
 	       <sonar.login>sqa_65a3cbac0adf0bcdb19aae499e667d90e5084d5e</sonar.login>
                <sonar.projectName>nari333</sonar.projectName>
                <sonar.projectVersion>main</sonar.projectVersion>
+	       <sonar.java.binaries>target/classes</sonar.java.binaries>
                <sonar.test.exclusions>**/test/**/*.*</sonar.test.exclusions>
                <sonar.exclusions>**/ai/**/*.*,**/jdbc/**/*.*,**/mpt/**/*.*,**/jcr/**/*.*,**/JDBC*</sonar.exclusions>
             </properties>
