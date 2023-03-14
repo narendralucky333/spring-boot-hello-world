@@ -7,7 +7,7 @@
   <proxies></proxies>
   <servers>
     <server>
-      <id>narendra-snapshot</id>
+      <id>lucky-snapshot</id>
       <username>narendra</username>
       <password>narendra143</password>
     </server>
@@ -36,9 +36,9 @@
      <id>snapshot</id>
      <repositories>
        <repository>
-         <id>narendra-snapshot</id>
+         <id>lucky-snapshot</id>
          <name>your custom repo</name>
-         <url>http://nexus-java-project.apps.cluster-595nt.595nt.sandbox2720.opentlc.com/repository/narendra-snapshot/</url>
+         <url>http://nexus-java-project.apps.cluster-595nt.595nt.sandbox2720.opentlc.com/repository/lucky-snapshot/</url>
        </repository>      
      </repositories>
           
@@ -47,9 +47,9 @@
      <id>release</id>
      <repositories>
        <repository>
-         <id>narendra-snapshot</id>
+         <id>lucky-snapshot</id>
          <name>your custom repo</name>
-         <url>http://nexus-java-project.apps.cluster-595nt.595nt.sandbox2720.opentlc.com/repository/narendra-snapshot/</url>
+         <url>http://nexus-java-project.apps.cluster-595nt.595nt.sandbox2720.opentlc.com/repository/lucky-snapshot/</url>
        </repository>
      </repositories>
    </profile>
