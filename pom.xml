@@ -17,8 +17,8 @@
 
     <distributionManagement>
 	<repository>
-		<id>narendra-snapshot</id>
-		<url>http://nexus-java-project.apps.cluster-595nt.595nt.sandbox2720.opentlc.com/repository/narendra-snapshot/</url>
+		<id>narendra-releases</id>
+		<url>http://nexus-java-project.apps.cluster-595nt.595nt.sandbox2720.opentlc.com/repository/narendra-releases/</url>
 	</repository>
  
 	<snapshotRepository>
