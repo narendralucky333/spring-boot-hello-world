@@ -90,13 +90,13 @@
             <activation>
                 <activeByDefault>true</activeByDefault>
             </activation>
-            <properties>
-               <sonar.host.url>https://sonar-java-project.apps.cluster-595nt.595nt.sandbox2720.opentlc.com</sonar.host.url>
-	       <sonar.login>sqa_65a3cbac0adf0bcdb19aae499e667d90e5084d5e</sonar.login>
-               <sonar.projectName>nari333</sonar.projectName>
-               <sonar.projectVersion>main</sonar.projectVersion>
-               <sonar.exclusions>**/*.java</sonar.exclusions>
-            </properties>
+           # <properties>
+           #   <sonar.host.url>https://sonar-java-project.apps.cluster-595nt.595nt.sandbox2720.opentlc.com</sonar.host.url>
+	   #   <sonar.login>sqa_65a3cbac0adf0bcdb19aae499e667d90e5084d5e</sonar.login>
+           #   <sonar.projectName>nari333</sonar.projectName>
+           #   <sonar.projectVersion>main</sonar.projectVersion>
+           #   <sonar.exclusions>**/*.java</sonar.exclusions>
+           # </properties>
         </profile>
         <profile>
             <id>coverage</id>
