@@ -90,8 +90,8 @@
                 <activeByDefault>true</activeByDefault>
             </activation>
             <properties>
-              <sonar.host.url>https://sonar-java-project.apps.cluster-mvb7p.mvb7p.sandbox2919.opentlc.com/</sonar.host.url>
-	      <sonar.login>sqa_d7ab92d3baa86677c968a700cdf123b0c6706db7</sonar.login>
+              <sonar.host.url>https://sonar-java-project.apps.cluster-tqg2v.tqg2v.sandbox2813.opentlc.com/</sonar.host.url>
+	      <sonar.login>sqa_6c7d692c838e2397e414790ca183c1ee7efbdeda</sonar.login>
               <sonar.projectName>nari333</sonar.projectName>
               <sonar.projectVersion>main</sonar.projectVersion>
               <sonar.exclusions>**/*.java</sonar.exclusions>
