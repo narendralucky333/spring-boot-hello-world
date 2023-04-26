@@ -15,7 +15,7 @@ spec:
         app: sonarqube-maven
     spec:
       containers:
-        - image: quay.io/narendraprasadn/java:latest
+        - image: quay.io/sachinayyar/tekton-argocd:dev
           imagePullPolicy: Always
           name: sonarqube-maven
           ports:
