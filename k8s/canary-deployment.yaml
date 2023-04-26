@@ -1,0 +1,56 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: sonarqube-maven
+  name: sonarqube-maven
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sonarqube-maven
+  template:
+    metadata:
+      labels:
+        app: sonarqube-maven
+    spec:
+      containers:
+        - image: quay.io/narendraprasadn/java:latest
+          imagePullPolicy: Always
+          name: sonarqube-maven
+          ports:
+            - containerPort: 8080
+              protocol: TCP
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: sonarqube-maven
+  name: sonarqube-maven
+spec:
+  type: NodePort
+  ports:
+    - name: 8080-tcp
+      port: 8080
+      targetPort: 8080
+      protocol: TCP
+  selector:
+    app: sonarqube-maven
+
+---
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  labels:
+    app: sonarqube-maven
+  name: sonarqube-maven
+spec:
+  port:
+    targetPort: 8080-tcp
+  to:
+    kind: Service
+    name: sonarqube-maven
+    weight: 30
+    
