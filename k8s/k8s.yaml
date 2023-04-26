@@ -52,5 +52,5 @@ spec:
   to:
     kind: Service
     name: sonarqube-maven-example
-    weight: 100
+    weight: 70
     
