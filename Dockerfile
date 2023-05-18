@@ -1,4 +1,4 @@
-FROM registry.access.redhat.com/ubi8/openjdk-11
+FROM quay.io/narendraprasadn/base-image/openjdk-11
 
 EXPOSE 8080
 
