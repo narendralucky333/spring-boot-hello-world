@@ -7,9 +7,9 @@
   <proxies></proxies>
   <servers>
     <server>
-      <id>narendra-snapshot</id>
-      <username>narendra</username>
-      <password>narendra143</password>
+      <id>narendra-release</id>
+      <username>admin</username>
+      <password>admin123</password>
     </server>
   </servers>
   
@@ -18,7 +18,7 @@
    <mirror>
       <id>narendra-proxy</id>
       <mirrorOf>*</mirrorOf>
-      <url>http://nexus-java-project.apps.cluster-79krf.79krf.sandbox2133.opentlc.com/repository/narendra-proxy/</url>
+      <url>https://nexus-nexus.apps.ocp4.imss.work/repository/narendra-proxy/</url>
    </mirror>
  </mirrors>
   <profiles>
@@ -36,9 +36,9 @@
      <id>snapshot</id>
      <repositories>
        <repository>
-         <id>narendra-snapshot</id>
+         <id>narendra-release</id>
          <name>your custom repo</name>
-         <url>http://nexus-java-project.apps.cluster-79krf.79krf.sandbox2133.opentlc.com/repository/narendra-snapshot/</url>
+         <url>https://nexus-nexus.apps.ocp4.imss.work/repository/narendra-release/</url>
        </repository>      
      </repositories>
           
@@ -47,9 +47,9 @@
      <id>release</id>
      <repositories>
        <repository>
-         <id>narendra-snapshot</id>
+         <id>narendra-release</id>
          <name>your custom repo</name>
-         <url>http://nexus-java-project.apps.cluster-79krf.79krf.sandbox2133.opentlc.com/repository/narendra-snapshot/</url>
+         <url>https://nexus-nexus.apps.ocp4.imss.work/repository/narendra-release/</url>
        </repository>
      </repositories>
    </profile>
