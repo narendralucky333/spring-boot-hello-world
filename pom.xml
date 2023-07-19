@@ -17,13 +17,13 @@
 
     <distributionManagement>
 	<repository>
-		<id>narendra-snapshot</id>
-		<url>http://nexus-java-project.apps.cluster-79krf.79krf.sandbox2133.opentlc.com/repository/narendra-snapshot/</url>
+		<id>narendra-release</id>
+		<url>https://nexus-nexus.apps.ocp4.imss.work/repository/narendra-release/</url>
 	</repository>
  
 	<snapshotRepository>
-		<id>narendra-snapshot</id>
-		<url>http://nexus-java-project.apps.cluster-79krf.79krf.sandbox2133.opentlc.com/repository/narendra-snapshot/</url>
+		<id>narendra-release</id>
+		<url>https://nexus-nexus.apps.ocp4.imss.work/repository/narendra-release/</url>
 	</snapshotRepository>
 
     </distributionManagement>
