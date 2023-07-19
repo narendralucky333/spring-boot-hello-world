@@ -7,7 +7,7 @@
   <proxies></proxies>
   <servers>
     <server>
-      <id>narendra-release</id>
+      <id>narendra-snapshot</id>
       <username>admin</username>
       <password>admin123</password>
     </server>
@@ -36,9 +36,9 @@
      <id>snapshot</id>
      <repositories>
        <repository>
-         <id>narendra-release</id>
+         <id>narendra-snapshot</id>
          <name>your custom repo</name>
-         <url>https://nexus-nexus.apps.ocp4.imss.work/repository/narendra-release/</url>
+         <url>https://nexus-nexus.apps.ocp4.imss.work/repository/narendra-snapshot/</url>
        </repository>      
      </repositories>
           
@@ -47,9 +47,9 @@
      <id>release</id>
      <repositories>
        <repository>
-         <id>narendra-release</id>
+         <id>narendra-snapshot</id>
          <name>your custom repo</name>
-         <url>https://nexus-nexus.apps.ocp4.imss.work/repository/narendra-release/</url>
+         <url>https://nexus-nexus.apps.ocp4.imss.work/repository/narendra-snapshot/</url>
        </repository>
      </repositories>
    </profile>
