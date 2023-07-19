@@ -17,13 +17,13 @@
 
     <distributionManagement>
 	<repository>
-		<id>narendra-release</id>
-		<url>https://nexus-nexus.apps.ocp4.imss.work/repository/narendra-release/</url>
+		<id>narendra-snapshot</id>
+		<url>https://nexus-nexus.apps.ocp4.imss.work/repository/narendra-snapshot/</url>
 	</repository>
  
 	<snapshotRepository>
-		<id>narendra-release</id>
-		<url>https://nexus-nexus.apps.ocp4.imss.work/repository/narendra-release/</url>
+		<id>narendra-snapshot</id>
+		<url>https://nexus-nexus.apps.ocp4.imss.work/repository/narendra-snapshot/</url>
 	</snapshotRepository>
 
     </distributionManagement>
