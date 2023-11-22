@@ -29,18 +29,23 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
   sonar:
-    name: Test - Sonarqube Scan
-    runs-on: ubuntu-18.04
+    name: Test - SonarQube Scan
+    runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v1
-      - name: Set up JDK 11
-        uses: actions/setup-java@v1
-        with:
-          java-version: '17'
-      - name: Sonarqube Scan
-        run: mvn -B clean verify -Psonar -Dsonar.login=${{ secrets.SONAR_TOKEN }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}      
+    - name: Checkout Code
+      uses: actions/checkout@v2
 
-          
+    - name: Set up JDK 11
+      uses: actions/setup-java@v2
+      with:
+        distribution: 'adopt'
+        java-version: '11'
+
+    - name: SonarQube Scan
+      run: mvn -B clean verify sonar:sonar -Psonar
+      env:
+        GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
+        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
+        
