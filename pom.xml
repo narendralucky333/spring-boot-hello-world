@@ -16,16 +16,14 @@
     </parent>
 
     <distributionManagement>
-	<repository>
-		<id>narendra-snapshot</id>
-		<url>https://nexus-nexus.apps.ocp4.imss.work/repository/narendra-snapshot/</url>
-	</repository>
- 
-	<snapshotRepository>
-		<id>narendra-snapshot</id>
-		<url>https://nexus-nexus.apps.ocp4.imss.work/repository/narendra-snapshot/</url>
-	</snapshotRepository>
-
+        <repository>
+           <id>github</id>
+           <url>https://maven.pkg.github.com/narendralucky333/spring-boot-hello-world</url>
+        </repository>
+        <snapshotRepository>
+           <id>github</id>
+           <url>https://maven.pkg.github.com/narendralucky333/spring-boot-hello-world</url>
+        </snapshotRepository>
     </distributionManagement>
 	
     <properties>
