@@ -32,7 +32,6 @@ jobs:
     - uses: actions/upload-artifact@v3
       with:
         name: Build
-        path: artifacts
   sonar:
     name: Test - SonarQube Scan
     runs-on: ubuntu-latest
