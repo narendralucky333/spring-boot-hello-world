@@ -33,6 +33,7 @@ jobs:
       with:
        name: Build
        path: artifacts
+       expire-in: 90d
 
   sonar:
     name: Test - SonarQube Scan
