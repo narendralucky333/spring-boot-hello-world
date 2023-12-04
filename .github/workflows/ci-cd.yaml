@@ -66,14 +66,18 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v3
    
-      - name: Build & push into quay
-        uses: mr-smithers-excellent/docker-build-push@v6
+      - name: Set up Docker CLI
+        uses: docker/cli-action@v2
         with:
-         image: quay.io/narendraprasadn/github-actions/git-action-image
-         tags: v1
-         registry: quay.io
-         dockerfile: Dockerfile
-         username: ${{ secrets.QUAY_USERNAME }}
-         password: ${{ secrets.QUAY_PASSWORD }}    
+          version: '20.10'
+
+      - name: Build Docker Image
+        run: docker build -t quay.io/narendraprasadn/github-actions/git-action-image:v1 -f Dockerfile .
+    
+      - name: Log in to Quay
+        run: docker login -u ${{ secrets.QUAY_USERNAME }} -p ${{ secrets.QUAY_PASSWORD }}
+
+      - name: Push Docker Image
+        run: docker push quay.io/narendraprasadn/github-actions/git-action-image:v1
 
          
