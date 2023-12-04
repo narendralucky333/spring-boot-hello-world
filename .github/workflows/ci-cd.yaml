@@ -54,4 +54,26 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
-    
+
+  
+  Docker:
+
+     name: Build & Push
+     runs-on: ubuntu-latest
+     needs: [build]
+     
+     steps:
+      - name: Check out code
+        uses: actions/checkout@v3
+   
+      - name: Build & push into quay
+        uses: mr-smithers-excellent/docker-build-push@v6
+        with:
+         image: quay.io/narendraprasadn/github-actions/git-action-image
+         tags: v1
+         registry: quay.io
+         dockerfile: Dockerfile
+         username: ${{ secrets.QUAY_USERNAME }}
+         password: ${{ secrets.QUAY_PASSWORD }}    
+
+         
