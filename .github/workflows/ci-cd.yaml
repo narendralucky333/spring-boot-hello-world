@@ -72,7 +72,7 @@ jobs:
           image: quay.io/narendraprasadn/github-actions/git-action-image
           tags: v1
           registry: quay.io
-          dockerfile: Dockerfile.ci
+          dockerfile: Dockerfile
           username: ${{ secrets.QUAY_USERNAME }}
           password: ${{ secrets.QUAY_PASSWORD }}
          
