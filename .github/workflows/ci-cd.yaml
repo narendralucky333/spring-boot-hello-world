@@ -69,7 +69,7 @@ jobs:
       - name: Build & push Quay
         uses: mr-smithers-excellent/docker-build-push@v6
         with:
-          image: narendraprasadn/github-actions
+          image: narendraprasadn/github-actions/git-action-image
           tags: v1
           registry: quay.io
           dockerfile: Dockerfile
