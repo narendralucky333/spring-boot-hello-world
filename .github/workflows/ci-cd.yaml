@@ -33,7 +33,7 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
        name: Maven-Artifacts
-       path: artifacts
+       path: ${{ github.workspace }}/target/artifacts
 
 
   sonar:
