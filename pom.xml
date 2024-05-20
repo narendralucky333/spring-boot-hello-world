@@ -16,16 +16,16 @@
     </parent>
 	
     <distributionManagement>
-        <repository>
-           <id>github</id>
-	    <name>narendralucky333</name>
-           <url>https://maven.pkg.github.com/narendralucky333/spring-boot-hello-world</url>
-        </repository>
-        <snapshotRepository>
-           <id>github</id>
-	    <name>narendralucky333</name>
-           <url>https://maven.pkg.github.com/narendralucky333/spring-boot-hello-world</url>
-        </snapshotRepository>
+	<repository>
+              <id>narendra-snapshot</id>
+ 	      <url>http://nexus-java-cicd.apps.cluster-s7cmb.s7cmb.sandbox2460.opentlc.com/repository/narendra-snapshot/</url>     
+	</repository>
+ 
+ 	<snapshotRepository>
+	      <id>narendra-snapshot</id>
+	      <url>http://nexus-java-cicd.apps.cluster-s7cmb.s7cmb.sandbox2460.opentlc.com/repository/narendra-snapshot/</url>
+	</snapshotRepository>
+
     </distributionManagement>
 	
     <properties>
